@@ -141,8 +141,8 @@ function App() {
 
   return (
     <div className=' '>
-      <img src='src/assets/bg-bob.png' className={`z-[-1] absolute top-0 left-0 ${animation ? 'sideway' : 'floating'}`}></img>
-      <img src='src/assets/bg-bob2.png' className={`z-[-1] absolute bottom-20 right-0 ${animation ? 'sideway2' : 'floating'}`}></img>
+      <img src='bg-bob.png' className={`z-[-1] absolute top-0 left-0 ${animation ? 'sideway' : 'floating'}`}></img>
+      <img src='bg-bob2.png' className={`z-[-1] absolute bottom-20 right-0 ${animation ? 'sideway2' : 'floating'}`}></img>
       {!animation ? <Home clickhandler={startQuiz} /> : (datas.response_code == 5 ? <p className='text-center font-medium my-6 text-red-500 inter '>Too many refresh wait! and Try Again</p> : <div className='w-full fixed inset-0 mx-auto mt-[20px] flex flex-col  zoom overflow-auto'>
         {questionarray}
 
