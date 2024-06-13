@@ -18,7 +18,7 @@ function App() {
     }
   }
   async function temp() {
-    await fetch('https://opentdb.com/api.php?amount=5&category=9&difficulty=medium&type=multiple')
+    await fetch('https://opentdb.com/api.php?amount=5&category=11&difficulty=easy&type=multiple')
       .then(response => response.json())
       .then((data) => { setdatas(() => { return { ...data } }) }).catch(error => console.error('Error:', error));
   }
