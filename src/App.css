@@ -1,0 +1,44 @@
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+    
+@keyframes sideway {
+    0% { transform: translate(0,  0px); }
+    100%   { transform: translate(-80px, -80px); }    
+}
+@keyframes sideway2 {
+    0% { transform: translate(0,  0px); }
+    100%   { transform: translate(0px, 80px); }    
+}
+@keyframes zoom{
+    0% { transform: scale(0); }
+    100%   { transform: scale(1); }    
+}
+    
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+    
+.sideway {  
+    animation-name: sideway;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.sideway2 {  
+    animation-name: sideway2;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.zoom {  
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
